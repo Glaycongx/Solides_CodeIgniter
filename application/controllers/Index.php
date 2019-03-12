@@ -58,14 +58,37 @@ class Index extends CI_Controller {
 	public function entrada_empresa(){
 		$post = $this->input->post();
 
-		$entrada1 = $this->Login_model->entra_empresa($post);
+		$entrada1 = $this->Login_model->entrada_empresa($post);
+
+			redirect('/painel');
+	}
+
+	public function saida_almoco(){
+		$post = $this->input->post();
+
+		$entrada1 = $this->Login_model->saida_almoco($post);
+
+			redirect('/painel');
+	}
+
+	public function entrada_almoco(){
+		$post = $this->input->post();
+
+		$entrada1 = $this->Login_model->entrada_almoco($post);
+
+			redirect('/painel');
+	}
+
+	public function saida_empresa(){
+		$post = $this->input->post();
+
+		$entrada1 = $this->Login_model->saida_empresa($post);
 
 			redirect('/painel');
 	}
 
 	public function mataSessao(){
-		//session_start();
-		session_destroy();
+		$this->session->unset_userdata('usuario');
 		redirect('/index');
 		exit();
 	}

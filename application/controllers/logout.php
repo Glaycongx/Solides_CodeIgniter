@@ -1,5 +1,4 @@
 <?php
-session_start();
-session_destroy();
+$this->session->unset_userdata('usuario');
 header('Location: index.php');
 exit();
