@@ -4,7 +4,7 @@ O arquivo se trata de um sistema de registro de ponto, composto de validação v
 
 Para executar o sistema, basta:
 
-Baixar o repositório "Solides"
+Baixar o repositório "login-php-codeigniter"
 
 Adicioná-lo a pasta www, dentro da instalação do WAMP.
 
