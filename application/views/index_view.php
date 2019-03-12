@@ -37,9 +37,9 @@
                                 </div>
                             </div>
                             <div style="display: flex; margin-top: 20px">
-                                <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex">Entrar</button>
+                                <a href="http://localhost/login-php-codeigniter/index/cadastro" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Cadastrar</a>       
                                 <div style="margin-right: 10px"></div>
-                                <a href="http://localhost/login-php-codeigniter/index/cadastro" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Cadastrar</a>
+                                <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex" style="background-color: green">Entrar</button>
                             </div>
                         </form>
                     </div>

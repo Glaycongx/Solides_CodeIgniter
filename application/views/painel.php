@@ -19,6 +19,8 @@
 
                     <div class="box">
                         <form>
+
+                            <h2>Olá, Seja bem vindo!</h2>
                             
                             <div style="display: flex; margin-top: 20px">
                                 <a href="http://localhost/login-php-codeigniter/index/entrada_empresa" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Entrada 1</a>
@@ -33,9 +35,13 @@
 
                             </div>
                         </form>
-                        <h2><a href="http://localhost/login-php-codeigniter/index/mataSessao" class="button is-block is-link is-large is-fullwidth" style="margin-top: 10px">Sair</a></h2>
 
-                    </div>
+                        <div style="display: flex; margin-top: 20px">
+                            <a href="http://localhost/login-php-codeigniter/index/exit" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; background-color: red">Sair</a>
+                        <div style="margin-right: 5px"></div>
+                            <a href="http://localhost/login-php-codeigniter/index/relatorio" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Histórico</a>
+                        </div>
+                            </div>
 
 </div>
 </div>

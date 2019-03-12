@@ -22,6 +22,10 @@ class Index extends CI_Controller {
 		$this->load->view('cadastro');
 	}
 
+	public function relatorio(){
+		$this->load->view('relatorio');
+	}
+
 	public function logar()
 	{
 
@@ -87,10 +91,8 @@ class Index extends CI_Controller {
 			redirect('/painel');
 	}
 
-	public function mataSessao(){
-		$this->session->unset_userdata('usuario');
-		redirect('/index');
-		exit();
+	public function exit(){
+		$this->Login_model->mataSessao();
 	}
 }
 

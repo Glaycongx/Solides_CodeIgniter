@@ -136,7 +136,25 @@ class Login_model extends CI_Model {
         	$this->db->insert('ponto_eletronico', $data);
 	    }
 
+	    public function mataSessao(){
+		$this->session->unset_userdata('usuario');
+		$this->session->sess_destroy();
+		redirect('/index');
+		exit();
+	}
 
+	public function historico(){
+		$nome = $_SESSION['usuario'];
+
+			/*$this->db->select('data_registro', 'tipo_registro', 'hora');
+			$this->db->from('ponto_eletronico');
+			$this->db->where('usuario', $this->session->userdata('usuario'));
+
+	    	$result = $this->db->get();
+	    	$result = $result->row_array()['data_registro', 'tipo_registro', 'hora'];
+
+			$result = $conexao->query($exibe);*/
+	}
 
  }    
 ?>

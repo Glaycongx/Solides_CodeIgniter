@@ -64,9 +64,9 @@
                                 </div>
                             </div>
                             <div style="display: flex">
-                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>
+                                <a href="http://localhost/login-php-codeigniter/index/index" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Voltar</a>
                             <div style="margin-right: 10px"></div>
-                            <a href="http://localhost/login-php-codeigniter/index/logar" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Voltar</a>
+                            <button type="submit" class="button is-block is-link is-large is-fullwidth" style="background-color: green">Cadastrar</button>
                             </div>
                         </form>
                     </div>
