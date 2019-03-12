@@ -11,8 +11,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sistema de Login - Solides</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/login.css">
+    <link rel="stylesheet" href="../css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 
 <body>
@@ -22,34 +22,24 @@ session_start();
                 <div class="column is-4 is-offset-4">
                     <h3 class="title has-text-grey">Solides Tecnologia</h3>
                     <h3 class="title has-text-grey" target="_blank">Ponto do Estagiário</h3>
-                    <?php
-                    if(isset($_SESSION['nao_autenticado'])):
-                    ?>
-                    <div class="notification is-danger">
-                      <p>ERRO: Usuário ou senha inválidos.</p>
-                    </div>
-                    <?php
-                    endif;
-                    unset($_SESSION['nao_autenticado']);
                     ?>
                     <div class="box">
-                        <form action="http://localhost/Solides/index/logar" method="POST">
+                        <form action="http://localhost/login-php-codeigniter/index/logar" method="POST">
                             <div class="field">
                                 <div class="control">
-                                    <input name="usuario" name="text" class="input is-large" placeholder="Seu usuário" autofocus="">
+                                    <input name="usuario" name="text" class="input is-large" placeholder="Seu usuário" autofocus="" required="">
                                 </div>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
+                                    <input name="senha" class="input is-large" type="password" placeholder="Sua senha" required="">
                                 </div>
                             </div>
                             <div style="display: flex; margin-top: 20px">
                                 <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex">Entrar</button>
                                 <div style="margin-right: 10px"></div>
-                                <a href="cadastro.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Cadastrar</a>
-
+                                <a href="http://localhost/login-php-codeigniter/index/cadastro" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Cadastrar</a>
                             </div>
                         </form>
                     </div>

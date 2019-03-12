@@ -18,21 +18,23 @@ session_start();
                 <div class="column is-4 is-offset-4">
 
                     <div class="box">
-                        <form action="entrada.php" method="POST">
+                        <form>
                             
                             <div style="display: flex; margin-top: 20px">
-                                <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex" ">Entrada</button>
-                                <div style="margin-right: 10px"></div>
-                                <a href="cadastro.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Saída</a>
-                                <div div style="margin-right: 10px"></div>
-                                <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex">Entrada</button>
-                                <div div style="margin-right: 10px"></div>
-                                <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex">Saída</button>
+                                <a href="http://localhost/login-php-codeigniter/index/entrada_empresa" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Entrada 1</a>
+                                <div style="margin-right: 5px"></div>
+                                <a href="saida_almoco.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Saida 1</a>
+                                <div div style="margin-right: 5px"></div>
+                                <a href="entrada_almoco.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Entrada 2</a>
+                                <div div style="margin-right: 5px"></div>
+                                <a href="saida_empresa.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Saída 2</a>
+                            </div>
 
 
                             </div>
                         </form>
-                        <h2><a href="logout.php" class="button is-block is-link is-large is-fullwidth" style="margin-top: 10px">Sair</a></h2>
+                        <h2><a href="http://localhost/login-php-codeigniter/index/mataSessao" class="button is-block is-link is-large is-fullwidth" style="margin-top: 10px">Sair</a></h2>
+
                     </div>
 
 </div>

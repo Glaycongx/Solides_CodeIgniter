@@ -19,7 +19,7 @@ class Index extends CI_Controller {
 
 	public function cadastro()
 	{
-		$this->load->view('painel');
+		$this->load->view('cadastro');
 	}
 
 	public function logar()
@@ -30,16 +30,44 @@ class Index extends CI_Controller {
 		$verifica_login = $this->Login_model->validate($post);
 
 		if($verifica_login){
-			redirect('ponto');
+			redirect('painel');
 		}else
 		{
-			redirect('index/index');
+			redirect('/index');
 		}
 	}
 
 	public function apontar_registro()
 	{
 		$this->load->view('painel');
+	}
+
+	public function cadastra_novo(){
+		$post = $this->input->post();
+
+		$novo_usuario = $this->Login_model->cadastrar($post);
+
+		if($novo_usuario){
+			redirect('/index');
+		}else
+		{
+			echo("Erro");
+		}
+	}
+
+	public function entrada_empresa(){
+		$post = $this->input->post();
+
+		$entrada1 = $this->Login_model->entra_empresa($post);
+
+			redirect('/painel');
+	}
+
+	public function mataSessao(){
+		//session_start();
+		session_destroy();
+		redirect('/index');
+		exit();
 	}
 }
 
